@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: bold
+}
+header{
+    background-color: rgba(0, 0, 0, 0.702);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    min-height: 12vh;
+    padding: 0rem 1rem;
+    position: relative;
+}
+.logo{
+    cursor: pointer;
+}
+/* .logo:hover{
+    background-color: black;
+} */
+
+
+/* HIDDEM MENU STYLING */
+.sm-menu{
+    background-color: rgba(8, 6, 30, 0.737);
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 1rem;
+    padding: 0.5rem 0rem 0.5rem 0.5rem;    
+}
+.hide-menu{
+    display: none;
+}
+#close-menu-btn,#menu-btn{
+    width: 4rem;
+    height: 2.2rem;
+    color: white;
+    background-color: blue;
+    border-radius: 0.3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* MEDIA QUERRIES */
+@media (min-width:768px){
+    header{
+        background-color: rgba(11, 61, 14, 0.744);
+    }
+    .lg-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        column-gap: 1.5rem;
+    }
+    .lg-menu div a:hover{
+        color: blue;
+        background-color: white;
+        padding: 0.2rem;
+        border: none;
+        outline: none;
+        border-radius: 0.2rem;
+    }
+    #menu-container{
+        display: none;
+    }
+    .sm-menu{
+        display: none;
+    }
+}
