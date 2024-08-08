@@ -11,5 +11,9 @@
 <h1>
     FOODS PAGE
 </h1>
+
+    
+
+    <?php include 'footer.php' ?>
 </body>
 </html>

@@ -10,5 +10,9 @@
 <h1>
     ABOUT PAGE
 </h1>
+
+    
+
+    <?php include 'footer.php' ?>
 </body>
 </html>
